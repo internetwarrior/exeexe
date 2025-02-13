@@ -24,5 +24,5 @@ def send_verification_email(sender, instance, created, **kwargs):
             'user': instance,
             'verification_link': verification_link,
         })
-        send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [instance.email])
+        send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [instance.email]) # Ощибка
 
